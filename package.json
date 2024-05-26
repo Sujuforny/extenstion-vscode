@@ -3,7 +3,7 @@
   "displayName": "create-simple-vue",
   "publisher": "siengpengny",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.89.0"
   },

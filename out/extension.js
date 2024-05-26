@@ -54,47 +54,49 @@ function activate(context) {
             const vueTemplateContent = `<template src="./${baseName}.html"></template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-export default defineComponent({
-    name: 'UserInformation',
-    data() {
-        return {
+import {{ defineComponent }} from 'vue';
+export default defineComponent({{
+    name: '${baseName}',
+    data() {{
+        return {{
            //
-        }
-    },
+        }}
+    }},
 
-    props: {
-        restart: {
+    props: {{
+        restart: {{
             type: Boolean
-        }
-    },
+        }}
+    }},
 
-    watch: {
-        restart() {
-            if (!this.restart) {
+    watch: {{
+        restart() {{
+            if (!this.restart) {{
                 return;
-            } else {
-                this.clearAllData();
-                this.$emit('alreadyReloadData')
-            }
-        }
-    },
+            }} else {{
+                //Do something when click refresh btn
+                //example: this.clearAllData();
 
-    created() {
+                this.$emit('alreadyReloadData');
+            }}
+        }}
+    }},
+
+    created() {{
         //
-    },
+    }},
 
-    computed: {
-    //
-    },
+    computed: {{
+        //
+    }},
 
-    mounted() {
-        // this.$nextTick(() => {
-        //     (this.$refs.employeeNo as HTMLInputElement).focus();
-        // });
-    },
+    mounted() {{
+        //
+    }},
 
-    methods: {
+    methods: {{
+
+        //init
 
         //btn
 
@@ -104,10 +106,10 @@ export default defineComponent({
 
         //method
 
-        //scroll 
+        //scroll
 
-    }
-})
+    }}
+}})
 </script>
 
 <style lang="scss" scoped>
